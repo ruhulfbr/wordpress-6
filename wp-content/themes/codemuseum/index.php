@@ -7,6 +7,18 @@
 </head>
 <body <?php body_class(); ?>>
 
+	<div class="container">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="logo">
+					<a href="">
+						<img src="<?php echo get_theme_mod('cdm_logo'); ?>" style="height: 150px;" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 <?php wp_footer(); ?>
 </body>
