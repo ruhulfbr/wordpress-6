@@ -42,3 +42,7 @@ function cdm_customize_register($wp_customize){
 }
 
 add_action('customize_register', 'cdm_customize_register');
+
+
+//Register menu
+register_nav_menu('main_menu', __('Main Menu', 'codemuseum') );
