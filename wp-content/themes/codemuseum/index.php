@@ -17,6 +17,13 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="col-md-12">
+			<div class="row">
+				<?php wp_nav_menu( array( 'theme_location' => 'main_menu' ) ); ?>
+
+			</div>
+		</div>
 	</div>
 
 
