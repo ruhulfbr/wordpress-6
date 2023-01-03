@@ -30,6 +30,13 @@
                   </div>
               </div>
           </div>
+
+          <div id="page_nav">
+            <?php if ('ali_pagenav') {ali_pagenav(); } else{ ?>
+                <?php next_posts_link(); ?>
+                <?php previous_posts_link(); ?>
+            <?php } ?>
+          </div>
   
       </div>
   </section>
