@@ -25,6 +25,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
+            <?php //wp_nav_menu( array('theme_location' => 'main_menu', 'menu_id' => 'nav') ); ?>
+
             <div class="navbar-nav ms-auto py-4 py-lg-0">
                 <a href="<?php echo home_url(); ?>" class="nav-item nav-link active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
