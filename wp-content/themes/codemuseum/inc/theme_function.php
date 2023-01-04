@@ -20,7 +20,7 @@ function cdm_customize_register($wp_customize){
 
 	  // Menu Position Option
 	$wp_customize->add_section('cdm_menu_option', array(
-	    'title' => __('Menu Position Option', 'alihossain'),
+	    'title' => __('Menu Position Option', 'codemuseum'),
 	    'description' => 'If you interested to change your menu position you can do it.'
 	));
 
@@ -43,7 +43,7 @@ function cdm_customize_register($wp_customize){
 
 	  // Footer Option
 	$wp_customize->add_section('cdm_footer_option', array(
-	    'title' => __('Footer Option', 'alihossain'),
+	    'title' => __('Footer Option', 'codemuseum'),
 	    'description' => 'If you interested to change or update your footer settings you can do it.'
 	));
 
