@@ -28,3 +28,7 @@ include_once('inc/widgets_register.php');
 // Custom post type register
 include_once('inc/custom_post_type.php');
 
+
+
+// Short Code
+include_once('inc/shortcode.php');
