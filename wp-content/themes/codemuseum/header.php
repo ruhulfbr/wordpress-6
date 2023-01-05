@@ -24,10 +24,10 @@
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <?php //wp_nav_menu( array('theme_location' => 'main_menu', 'menu_id' => 'nav') ); ?>
+        <div class="collapse navbar-collapse pull-right" id="navbarCollapse">
+            <?php wp_nav_menu( array('theme_location' => 'main_menu', 'menu_id' => 'nav_area') ); ?>
 
-            <div class="navbar-nav ms-auto py-4 py-lg-0">
+            <!-- <div class="navbar-nav ms-auto py-4 py-lg-0">
                 <a href="<?php echo home_url(); ?>" class="nav-item nav-link active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link">Service</a>
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
+            </div> -->
             <div class="h-100 d-lg-inline-flex align-items-center d-none">
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
                         class="fab fa-facebook-f"></i></a>
