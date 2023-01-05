@@ -57,6 +57,60 @@ function cdm_customize_register($wp_customize){
 	    'setting' => 'cdm_copyright_section',
 	    'section' => 'cdm_footer_option',
 	));
+
+
+
+	// Theme Color
+	$wp_customize-> add_section('cdm_colors', array(
+	    'title' => __('Theme Colors and Mode', 'codemuseum'),
+	    'description' => 'If need you can change your theme color and mode',
+	));
+
+
+	$wp_customize ->add_setting('cdm_theme_mode', array(
+	    'default' => '#F2F8FE',
+	));
+
+	$wp_customize-> add_control('cdm_theme_mode', array(
+	    'label' => 'Theme Mode',
+	    'description' => 'Select your theme mode Light/Dark',
+	    'setting' => 'cdm_theme_mode',
+	    'section' => 'cdm_colors',
+	    'type' => 'radio',
+	    'choices' => array(
+	      '#F2F8FE' => 'Light',
+	      '#111111' => 'Dark'
+	    ),
+	));
+
+	$wp_customize ->add_setting('cdm_primary_color', array(
+	    'default' => '#16D5FF',
+	));
+	$wp_customize->add_control( new WP_Customize_color_control($wp_customize, 'cdm_primary_color', array(
+	    'label' => 'Primary Color',
+	    'section' => 'cdm_colors',
+	    'settings' => 'cdm_primary_color',
+	)));
+
+	$wp_customize ->add_setting('cdm_secondary_color', array(
+	    'default' => '#999999',
+	));
+
+	$wp_customize->add_control( new WP_Customize_color_control($wp_customize, 'cdm_secondary_color', array(
+	    'label' => 'Secondary Color',
+	    'section' => 'cdm_colors',
+	    'settings' => 'cdm_secondary_color',
+	)));
 }
 
 add_action('customize_register', 'cdm_customize_register');
+
+
+function cdm_theme_color_cus(){
+  ?>
+  <style>
+    :root{ --primary:<?php echo get_theme_mod('cdm_primary_color'); ?>; --secondary:<?php echo get_theme_mod('cdm_secondary_color'); ?>}
+  </style>
+  <?php 
+}
+add_action('wp_head', 'cdm_theme_color_cus');
