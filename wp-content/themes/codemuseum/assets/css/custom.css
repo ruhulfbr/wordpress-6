@@ -1,31 +1,31 @@
-#nav_area ul {
+#main_menu_area ul {
   margin: 10px 0 0;
   padding: 0;
   list-style: none;
   text-align: right;
 }
-#nav_area ul li {
+#main_menu_area ul li {
   display: inline-block;
   position: relative;
 }
-#nav_area ul li a span {
+#main_menu_area ul li a span {
   display: block;
   font-size: 13px;
 }
-#nav_area ul li a {
+#main_menu_area ul li a {
   color: #262626;
   padding: 20px 10px;
   font-size: 16px;
   display: block;
   text-decoration: none;
 }
-#nav_area ul li a:hover {
+#main_menu_area ul li a:hover {
   background: #ea1a70;
   color: #fff;
 }
 
 /*Dropdown Menu*/
-#nav_area ul li ul {
+#main_menu_area ul li ul {
   background: #262626 none repeat scroll 0 0;
   left: -99999px;
   margin: 0;
@@ -35,50 +35,50 @@
   width: 200px;
   z-index: 99999;
 }
-#nav_area ul li:hover ul {
+#main_menu_area ul li:hover ul {
   left: 0px;
 }
-#nav_area ul li ul li {
+#main_menu_area ul li ul li {
   display: block;
 }
-#nav_area ul li ul li a {
+#main_menu_area ul li ul li a {
   color: #fff;
   padding: 8px 10px;
 }
-#nav_area ul li ul li a:hover {
+#main_menu_area ul li ul li a:hover {
   background: #ddd;
   color: #262626;
 }
-#nav_area ul li:hover a {
+#main_menu_area ul li:hover a {
   background: #ea1a70;
   color: #fff;
 }
-#nav_area ul li:hover ul li a {
+#main_menu_area ul li:hover ul li a {
   background: none;
   color: #fff;
 }
 
 /*Sub Dropdown Menu*/
-#nav_area ul li ul ul {
+#main_menu_area ul li ul ul {
   left: -99999px;
   top: 0;
   position: absolute;
 }
-#nav_area ul li:hover ul li ul {
+#main_menu_area ul li:hover ul li ul {
   left: -999999px;
 }
-#nav_area ul li ul li:hover ul {
+#main_menu_area ul li ul li:hover ul {
   left: 200px;
 }
-#nav_area ul li ul li:hover a {
+#main_menu_area ul li ul li:hover a {
   background: #ea1a70;
   color: #fff;
 }
-#nav_area ul ul li:hover ul li a {
+#main_menu_area ul ul li:hover ul li a {
   background: #262626;
   color: #fff;
 }
-#nav_area ul ul li ul li a:hover {
+#main_menu_area ul ul li ul li a:hover {
   background: #ea1a70;
   color: #fff;
 }

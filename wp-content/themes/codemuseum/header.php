@@ -21,10 +21,10 @@
         <a href="<?php echo home_url(); ?>" class="navbar-brand d-flex align-items-center">
             <h2 class="m-0 text-primary"><img class="img-fluid me-2" src="<?php echo get_theme_mod('cdm_logo'); ?>" alt="<?php echo get_bloginfo( 'name' ); ?>" style="width: 45px;"><?php echo get_bloginfo( 'name' ); ?></h2>
         </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main_menu_area">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse pull-right" id="navbarCollapse">
+        <div class="collapse navbar-collapse pull-right" id="main_menu_area">
             <?php wp_nav_menu( array('theme_location' => 'main_menu', 'menu_id' => 'nav_area') ); ?>
 
             <!-- <div class="navbar-nav ms-auto py-4 py-lg-0">
