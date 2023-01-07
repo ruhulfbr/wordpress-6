@@ -68,7 +68,7 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid" src="<?php echo get_template_directory_uri().'/assets/img/about.png' ?>" alt="">
+                    <img class="img-fluid" src="http://localhost/wordpress/wp-content/uploads/2023/01/about.png" alt="about">
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="h-100">
@@ -105,17 +105,17 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <img class="img-fluid mb-4" src="img/icon-9.png" alt="">
+                    <img class="img-fluid mb-4" src="img/icon-9.png" alt="today">
                     <h1 class="display-4" data-toggle="counter-up">123456</h1>
                     <p class="fs-5 text-primary mb-0">Today Transactions</p>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <img class="img-fluid mb-4" src="img/icon-10.png" alt="">
+                    <img class="img-fluid mb-4" src="img/icon-10.png" alt="month">
                     <h1 class="display-4" data-toggle="counter-up">123456</h1>
                     <p class="fs-5 text-primary mb-0">Monthly Transactions</p>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <img class="img-fluid mb-4" src="img/icon-2.png" alt="">
+                    <img class="img-fluid mb-4" src="img/icon-2.png" alt="total">
                     <h1 class="display-4" data-toggle="counter-up">123456</h1>
                     <p class="fs-5 text-primary mb-0">Total Transactions</p>
                 </div>

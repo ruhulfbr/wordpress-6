@@ -232,3 +232,7 @@
 .comment-form .comment-form-cookies-consent label {
   display: inline;
 }
+
+.animation_duration_3s{
+    animation-duration: 3s !important;
+}
