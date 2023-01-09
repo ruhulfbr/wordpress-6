@@ -32,3 +32,9 @@ include_once('inc/custom_post_type.php');
 
 // Short Code
 include_once('inc/shortcode.php');
+
+// WP Bekrey ShortCode
+include_once('inc/bekrey_shortcode.php');
+
+// WP Bekrey Short Code
+include_once('inc/bekrey_shortcode_elements.php');

@@ -4,7 +4,7 @@
 */
 get_header(); ?>
 
-<?php //echo do_shortcode('[cdm_service]'); ?>
+<?php //==echo do_shortcode('[cdm_service]'); ?>
 
 <?php the_content(); ?>
 

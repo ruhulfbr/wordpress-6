@@ -114,3 +114,5 @@ function cdm_theme_color_cus(){
   <?php 
 }
 add_action('wp_head', 'cdm_theme_color_cus');
+
+
