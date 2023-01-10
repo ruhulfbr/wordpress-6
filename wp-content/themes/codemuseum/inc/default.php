@@ -11,6 +11,7 @@ add_image_size('post-thumbnails', 970, 350, true);
 // Except to 40 Word
 
 function cdm_excerpt_more($more){
+  global $post;
   return '<br> <br> <a class="redmore" href="'.get_permalink( $post->ID) . '">' . 'Read More' . '</a>';
 }
 add_filter('excerpt_more', 'cdm_excerpt_more');

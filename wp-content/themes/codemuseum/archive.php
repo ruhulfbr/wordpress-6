@@ -11,7 +11,7 @@ get_header(); ?>
             <div id="archive_title">
               <?php
                   the_archive_title('<h1 class="title">','</h1>');
-                  the_author_description('<div class="description">', '</div>');
+                  the_author_meta('description','<div class="description">', '</div>');
               ?>
             </div>
 
