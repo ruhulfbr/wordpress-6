@@ -1,5 +1,15 @@
 <?php
 
+///Additional head data
+function cdm_additional_head(){
+	echo '
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	';
+}
+
+add_action('wp_head', 'cdm_additional_head');
+
 //Call Assets files
 
 //Import google font
@@ -50,3 +60,5 @@ function cdm_assets_call(){
 }
 
 add_action('wp_enqueue_scripts', 'cdm_assets_call');
+
+
