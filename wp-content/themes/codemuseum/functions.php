@@ -48,7 +48,7 @@ include_once('inc/bekrey_shortcode_elements.php');
         foreach ( $screens as $screen ) {
             add_meta_box(
                 'wporg_box_id',                 // Unique ID
-                'Pricing',      // Box title
+                'Custom Meta Box Title',      // Box title
                 'wporg_custom_box_html',  // Content callback, must be of type callable
                 $screen                            // Post type
             );
@@ -158,12 +158,31 @@ function cxc_add_admin_media_scripts() {
 add_action( 'admin_enqueue_scripts', 'cxc_add_admin_media_scripts' );
 
 
+
+// add_filter('manage_service_posts_columns', 'hs_product_table_head');
+// function hs_product_table_head( $columns ) {
+//     $columns['price']  = 'Price';
+//     return $columns;
+
+// }
+// add_action( 'manage_service_posts_custom_column', 'hs_product_table_content', 10, 2 );
+
+// function hs_product_table_content( $column_name, $post_id ) {
+
+//     if( $column_name == 'price' ) {
+//         $price = get_post_meta( $post_id, 'service_price', true );
+
+//         echo $price;
+//     }
+// }
+
 function service_custom_columns( $columns ) {
     $columns = array(
         'cb' => '<input type="checkbox" />',
         'featured_image' => 'Image',
         'title' => 'Title',
-        'comments' => '<span class="vers"><div title="Comments" class="comment-grey-bubble"></div></span>',
+        'price' => 'Price',
+        // 'comments' => '<span class="vers"><div title="Comments" class="comment-grey-bubble"></div></span>',
         'date' => 'Date'
      );
     return $columns;
@@ -174,6 +193,10 @@ function service_custom_columns_data( $column, $post_id ) {
     switch ( $column ) {
     case 'featured_image':
         the_post_thumbnail( 'thumbnail' );
+        break;
+    case 'price':
+        $price = get_post_meta( $post_id, 'service_price', true );
+        echo number_format($price, 2);
         break;
     }
 }
