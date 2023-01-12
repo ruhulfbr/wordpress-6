@@ -48,7 +48,7 @@ include_once('inc/bekrey_shortcode_elements.php');
         foreach ( $screens as $screen ) {
             add_meta_box(
                 'wporg_box_id',                 // Unique ID
-                'Custom Meta Box Title',      // Box title
+                'Pricing',      // Box title
                 'wporg_custom_box_html',  // Content callback, must be of type callable
                 $screen                            // Post type
             );
